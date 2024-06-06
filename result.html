@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Result</h1>
+        <p id= res></p>
+        <script>
+            var data= window.location.search;
+            var params = new URLSearchParams(data);
+
+            var name= params.get("name");
+            var fathersname= params.get("fathersname");
+            var mothersname= params.get("mothersname");
+            var dateofbirth= params.get("dateofbirth");
+            var nationality= params.get("nationality");
+            var religion= params.get("religion");
+            var gender= params.get("gender");
+            var nationalid= params.get("nationalid");
+            var birthreg= params.get("birthreg");
+            var passportid= params.get("passportid");
+            var maritalstatus= params.get("maritalstatus");
+            var email= params.get("email");
+            var mobile= params.get("mobile");
+            var city= params.get("city");
+            var bloodgroup= params.get("bloodgroup");
+           
+           
+            var getdata= "Name:" + name + "<br>";
+            getdata += "Father's Name:" + fathersname + "<br>";
+            getdata += "Mother's Name:" + mothersname + "<br>";
+            getdata += "Date Of Birth:" + dateofbirth + "<br>";
+            getdata += "Nationality:" + nationality + "<br>";
+            getdata += "Religion:" + religion + "<br>";
+            getdata += "Gender:" + gender + "<br>";
+            getdata += "National ID:" + nationalid + "<br>";
+            getdata += "Birth Registration:" + birthreg + "<br>";
+            getdata += "Passport ID:" + passportid + "<br>";
+            getdata += "Marital Status:" + maritalstatus + "<br>";
+            getdata += "Email:" + email + "<br>";
+             getdata += "Mobile:" + mobile + "<br>";
+             getdata += "City:" + city + "<br>";
+             getdata += "Blood Group:" + bloodgroup;
+            document.getElementById("res").innerHTML = getdata;
+            
+        </script>
+    </body>
+</html>

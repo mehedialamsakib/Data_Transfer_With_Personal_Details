@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Transfer</title>
+        <h1>Personal Details:</h1>
+        <style>
+            .container{
+                width: 800px;
+                margin: 0 auto;
+            }
+            h1{
+                color: #003147;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+            }
+            #customers {
+           font-family: Arial, Helvetica, sans-serif;
+           border-collapse: collapse;
+           width: 100%;
+           }
+
+          #customers td {
+          border: 1px solid #ddd;
+          padding: 8px;
+          }
+
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+        #customers tr:hover {background-color: #ddd;}
+        input[type=text] {
+         width: 100%;
+         padding: 3px 5px;
+         margin: 0px 0;
+         box-sizing: border-box;
+         border: 1px solid #555;
+         outline: none;
+         }
+        button {
+               background-color: #04AA6D; /* Green */
+               border: none;
+               color: white;
+               padding: 15px 32px;
+               align-content: center;
+               width: 100%;
+               cursor: pointer;
+              }
+           
+        </style>
+    </head>
+    <body>
+     
+        <div class="container">
+            <form method= "GET" action="result.html">
+                <table id="customers">
+                    <tr>
+                        <td>Name</td>
+                        <td><input type= "text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Father's Name</td>
+                        <td><input type= "text" name="fathersname"></td>
+                    </tr>
+                    <tr>
+                        <td>Mother's Name</td>
+                        <td><input type= "text" name="mothersname"></td>
+                    </tr>
+                    <tr>
+                        <td>Date Of Birth</td>
+                        <td><input type= "text" name="dateofbirth"></td>
+                    </tr>
+                    <tr>
+                        <td>Nationality</td>
+                        <td><input type= "text" name="nationality"></td>
+                    </tr>
+                    <tr>
+                        <td>Religion</td>
+                        <td><input type= "text" name="religion"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td><input type= "text" name="gender"></td>
+                    </tr>
+                    <tr>
+                        <td>National ID</td>
+                        <td><input type= "text" name="nationalid"></td>
+                    </tr>
+                    <tr>
+                        <td>Birth Registration</td>
+                        <td><input type= "text" name="birthreg"></td>
+                    </tr>
+                    <tr>
+                        <td>Passport ID</td>
+                        <td><input type= "text" name="passportid"></td>
+                    </tr>
+                    <tr>
+                        <td>Marital Status</td>
+                        <td><input type= "text" name="maritalstatus"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type= "text" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td><input type= "text" name="mobile"></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td><input type= "text" name="city"></td>
+                    </tr>
+                    <tr>
+                        <td>Blood Group</td>
+                        <td><input type= "text" name="bloodgroup"></td>
+                    <tr>
+                        <td></td>
+                     </tr>
+                </table>
+                <button type="submit">Submit</button>
+            </from>
+        </div>
+    </body>
+</html>
